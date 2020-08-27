@@ -1,0 +1,133 @@
+body {
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
+}
+
+.justify {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.line_d {
+  background-color: #AD7800;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+}
+
+.element {
+  background-image: url('../images/element.png');
+  background-size: 500px;
+  background-repeat: no-repeat;
+}
+
+.element_footer {
+  background-image: url('../images/element-footer.png');
+  background-size: 530px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.navbar-toggler{
+  border: none;
+  font-size: 18px;
+}
+
+.font_x {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.gradiente {
+  background: rgb(5,47,62);
+  background: linear-gradient(0deg, rgba(5,47,62,1) 0%, rgba(3,32,43,1) 35%, rgba(2,19,26,1) 100%);
+}
+
+.gradiente_invert {
+  background: rgb(5,47,62);
+  background: linear-gradient(180deg, rgba(5,47,62,1) 0%, rgba(3,32,43,1) 35%, rgba(2,19,26,1) 100%);
+}
+
+.background_two{
+  background-color: #02131A;
+}
+
+.color_two{
+  color: #AD7800;
+ }
+
+.background_color_two{
+ background-color: #AD7800;
+}
+
+.background_color_tree{
+  background-color: rgba(5,47,62,1);"
+}
+
+.color_tree{
+  background-color: #124350;
+}
+
+.color_four{
+  color: #d5d5d5;
+}
+
+.color_two a{
+  text-decoration: none;
+}
+
+.modal-transparence {
+  background: transparent;
+  border: none;
+}
+.site-header a {
+  text-decoration: none;
+  color: #AD7800;
+  transition: color .15s ease-in-out;
+}
+.site-header a:hover{
+  color: #d8a42b;
+  text-decoration: none;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.blog-card-img{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.no-decoration{
+  text-decoration: none;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
