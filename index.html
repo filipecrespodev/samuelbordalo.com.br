@@ -68,22 +68,28 @@
           <span class="navbar-toggler navbar-toggler-icon" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation"></span>
           <div id="navbarCollapse" class="navbar-collapse collapse justify-content-between text-center">
             <div>
-              <a class="py-3 font_x" href="#sobre-mim">Sobre mim</a>
+              <a class="py-3 font_x d-none d-xl-block"  onclick="document.getElementById('sobre-mim').scrollIntoView();">Sobre mim</a>
+              <a class="py-3 font_x d-xl-none"  data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="document.getElementById('sobre-mim').scrollIntoView();">Sobre mim</a>
             </div>
             <div>
-              <a class="py-3 font_x" href="#publicacoes">Publicações</a>
+              <a class="py-3 font_x d-none d-xl-block"  onclick="document.getElementById('publicacoes').scrollIntoView();">Publicações</a>
+              <a class="py-3 font_x d-xl-none"  data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="document.getElementById('publicacoes').scrollIntoView();">Publicações</a>
             </div>
             <div>
-              <a class="py-3 font_x" href="#atendimento-psicologico">Atendimento psicológico</a>
+              <a class="py-3 font_x d-none d-xl-block"  onclick="document.getElementById('atendimento-psicologico').scrollIntoView();">Atendimento psicológico</a>
+              <a class="py-3 font_x d-xl-none"  data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="document.getElementById('atendimento-psicologico').scrollIntoView();">Atendimento psicológico</a>
             </div>
             <div>
-              <a class="py-3 font_x" href="#por-que-fazer-terapia">Por que fazer terapia?</a>
+              <a class="py-3 font_x d-none d-xl-block"  onclick="document.getElementById('por-que-fazer-terapia').scrollIntoView();">Por que fazer terapia?</a>
+              <a class="py-3 font_x d-xl-none"  data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="document.getElementById('por-que-fazer-terapia').scrollIntoView();">Por que fazer terapia?</a>
             </div>
             <div>
-              <a class="py-3 font_x" href="#grupo-estudo">Grupos de Estudos</a>
+              <a class="py-3 font_x d-none d-xl-block"  onclick="document.getElementById('grupo-estudo').scrollIntoView();">Grupos de Estudos</a>
+              <a class="py-3 font_x d-xl-none"  data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="document.getElementById('grupo-estudo').scrollIntoView();">Grupos de Estudos</a>
             </div>
             <div>
-              <a class="py-3 font_x" href="#contato">Contato</a>
+              <a class="py-3 font_x d-none d-xl-block" onclick="document.getElementById('contato').scrollIntoView();">Contato</a>
+              <a class="py-3 font_x d-xl-none" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="document.getElementById('contato').scrollIntoView();">Contato</a>
             </div>
           </div>
         </div>
@@ -112,6 +118,9 @@
           <div class="col-xl-8">
             <h2 class="featurette-heading mb-4">Samuel Herrera Bordalo</h2>
             <p class="justify">Psicólogo (CRP: 157784/06), filósofo em formação pela FFLCH-USP. No momento, realiza atendimentos clínicos online de diversas populações, produz pesquisas na universidade, coorganiza e publica no AtelierPsi (um projeto em formato de blog voltado para a promoção da psicologia e a reflexão do cotidiano brasileiro), participa e organiza grupos de estudos envolvendo psicologia, psicanálise, teoria social e filosofia. Coorganizou e implementou projetos de promoção da psicologia em duas escolas públicas de São Paulo. Estagiou em um Centro de Atenção Integral à Saúde Mental (CAISM), em uma Casa de Saúde e em um Centro de Psicologia Aplicada (psicodiagnóstico, psicoterapia e oficinas). Concluiu pesquisas científicas sobre formas de cuidado de si dos adolescentes e sobre a fenomenologia francesa e a psicologia.</p>
+          </div>
+          <div class="d-lg-none">
+            <a href="#contato" class="btn color_two background_color_tree">Entre em contato</a>
           </div>
         </div>
         <span id="publicacoes"></span>
@@ -181,7 +190,7 @@
             </div>
           </div>
         </div>
-        <span id="por-que-fazer-terapia"></span> 
+        <span id="por-que-fazer-terapia"></span>
       </section>
       <div class="background_color_tree" id="por-que-fazer-terapia">
         <div class="container">
@@ -362,5 +371,13 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script>
+      function scrollIntoView(eleID) {
+        var e = document.getElementById(eleID);
+        if (!!e && e.scrollIntoView) {
+            e.scrollIntoView();
+        }
+      }
+    </script>
   </body>
 </html>
