@@ -110,3 +110,20 @@ a.color_two:hover {
 .no-decoration{
   text-decoration: none;
 }
+
+
+@media only screen and (max-width: 800px) {
+  .element {
+    background-image: url('../images/element.png');
+    background-size: 300px;
+    background-repeat: no-repeat;
+  }
+
+  .element_footer {
+    background-image: url('../images/element-footer.png');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+  }
+}
